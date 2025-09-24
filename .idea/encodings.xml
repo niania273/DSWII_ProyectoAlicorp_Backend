@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Gestion de Desempeño/Proyecto-DAW-master/performance/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Gestión de Empleado/MicroservicioGestionEmpleado/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Servicio Gateway/gateway-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Servicio Gateway/project.gateway/project.dawi1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Servicio de Autenticación/project.dawi/project.dawi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Servicio de Postulaciones/servicepostulation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons-dto/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons-dto/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
