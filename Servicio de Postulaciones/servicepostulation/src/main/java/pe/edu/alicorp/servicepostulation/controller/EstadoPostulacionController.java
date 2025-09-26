@@ -23,7 +23,7 @@ public class EstadoPostulacionController {
     }
 
     @GetMapping("/get/{id}")
-    public ResponseEntity<EstadoPostulacion> getAllActive(Long id){
+    public ResponseEntity<EstadoPostulacion> getById(Long id){
         return service.findById(id)
                 .map(ResponseEntity::ok)
                 .orElseGet(()-> ResponseEntity.notFound().build());
