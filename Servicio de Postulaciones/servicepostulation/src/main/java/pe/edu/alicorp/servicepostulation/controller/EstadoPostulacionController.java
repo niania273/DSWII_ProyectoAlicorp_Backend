@@ -19,7 +19,7 @@ public class EstadoPostulacionController {
 
     @GetMapping("/get")
     public List<EstadoPostulacion> getAllActive(){
-        return service.findAllActive();
+        return service.findAll();
     }
 
     @GetMapping("/get/{id}")

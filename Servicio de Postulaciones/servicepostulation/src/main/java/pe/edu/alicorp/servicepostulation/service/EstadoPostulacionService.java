@@ -14,8 +14,8 @@ public class EstadoPostulacionService {
     @Autowired
     private EstadoPostulacionRepository estadoPostulacionRepository;
 
-    public List<EstadoPostulacion> findAllActive(){
-        return estadoPostulacionRepository.findByEstado(true);
+    public List<EstadoPostulacion> findAll(){
+        return estadoPostulacionRepository.findAll();
     }
 
     public Optional<EstadoPostulacion> findById(Long id){
