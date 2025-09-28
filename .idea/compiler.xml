@@ -37,28 +37,29 @@
         <module name="MicroservicioGestionEmpleado" />
         <module name="performance" />
       </profile>
-      <profile name="Annotation profile for servicepostulation" enabled="true">
+      <profile name="Annotation profile for serviceproduct" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.40/lombok-1.18.40.jar" />
         </processorPath>
-        <module name="servicepostulation" />
+        <module name="serviceproduct" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="auth-service" target="17" />
+      <module name="serviceofertas" target="17" />
+      <module name="serviceofertas (1)" target="17" />
+      <module name="servicepostulation" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="MicroservicioGestionEmpleado" options="-parameters" />
-      <module name="auth-service" options="-parameters" />
       <module name="gateway-service" options="-parameters" />
-      <module name="performance" options="-parameters" />
-      <module name="project.dawi" options="-parameters" />
+      <module name="serviceofertas" options="-parameters" />
+      <module name="serviceofertas (1)" options="-parameters" />
       <module name="servicepostulation" options="-parameters" />
+      <module name="serviceproduct" options="-parameters" />
     </option>
   </component>
 </project>
