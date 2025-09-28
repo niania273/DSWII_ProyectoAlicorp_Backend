@@ -47,4 +47,15 @@ public class Producto {
     @JsonFormat(pattern = "dd-MM-yyyy HH:mm")
     @Column(name = "FECHAACTUALIZA")
     private LocalDateTime fechaactualiza;
+
+    public void actualizarProducto(Producto nuevoProducto) {
+        this.codcategoria = nuevoProducto.getCodcategoria();
+        this.imgproducto = nuevoProducto.getImgproducto();
+        this.nomproducto = nuevoProducto.getNomproducto();
+        this.descripcion = nuevoProducto.getDescripcion();
+        this.preuni = nuevoProducto.getPreuni();
+        this.codmarca = nuevoProducto.getCodmarca();
+        this.stock = nuevoProducto.getStock();
+        this.estproducto = nuevoProducto.isEstproducto();
+    }
 }

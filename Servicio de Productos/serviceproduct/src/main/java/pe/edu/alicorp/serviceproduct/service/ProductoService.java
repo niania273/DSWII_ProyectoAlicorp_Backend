@@ -7,6 +7,7 @@ import pe.edu.alicorp.serviceproduct.repository.ProductoRepository;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -27,15 +28,9 @@ public class ProductoService {
     }
 
     public Producto actualizarProducto(Long id, Producto producto){
-        return productoRepository.findById(id).map(producto1 -> {
-            producto1.setCodcategoria(producto.getCodcategoria());
-            producto1.setImgproducto(producto.getImgproducto());
-            producto1.setNomproducto(producto.getNomproducto());
-            producto1.setDescripcion(producto.getDescripcion());
-            producto1.setPreuni(producto.getPreuni());
-            producto1.setCodmarca(producto.getCodmarca());
-            producto1.setStock(producto.getStock());
-            producto1.setEstproducto(producto.isEstproducto());
+        Optional<Producto> productoexist = productoRepository.findById(id);
+        return productoexist.map(producto1 -> {
+            producto1.actualizarProducto(producto);
             producto1.setFechaactualiza(LocalDateTime.now());
             return productoRepository.save(producto1);
         }).orElse(null);
